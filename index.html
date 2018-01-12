@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Libraries -->
+    <script src="libs/jquery-3.1.0.min.js"></script>
+    <script src="libs/angular.min.js"></script>
+    <script src="bower_components/ngDrive/build/module.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/3.6.8/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
+    <script src="config/config.js"></script>
+    <script src="app.js"></script>
+    <!-- Angular Material Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+    <script src="libs/angular-pdf.js"></script>
+    <script src="libs/pdf.js"></script>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title> VietFuji Dict </title>
+</head>
+<header>
+    <nav id="header-nav" class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- <div> -->
+            <div class="row">
+                <!-- <div class="col-sm-2 hidden-xs">
+            <img id="nav-poster" src="images/poster_vertical.jpg"/>
+          </div> -->
+                <div id="About" class="col-sm-12 col-xs-12 col-xxs-12 text-left">
+                    <h2><span class="glyphicon glyphicon-tags"></span> PDF COMPONENT</h2>
+                    <h5>Vì tương lai con em chúng ta, ta kệ cha tương lai con em chúng nó</h5>
+                </div>
+            </div>
+        </div>
+        <!-- .container -->
+    </nav>
+    <!-- #header-nav -->
+</header>
+
+<body ng-app='pdfShow' ng-controller='AddController as pdf'>
+    <div class="container">
+        
+
+{{fetchedFile}}
+    
+<!-- <ng-pdf template-url="/viewer.html" scale="page-fit" page=1></ng-pdf>
+ -->
+
+<pdf-show></pdf-show>
+
+
+    </div>
+</body>
+<!-- <footer>
+    <a> Designed by Trungmaster and KhanhDuydeptrai|2017 </a>
+  </footer> -->
+
+</html>
